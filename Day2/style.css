@@ -1,0 +1,51 @@
+body{
+  background-color: #fcecdd;
+  display: flex;
+  justify-content: center;
+}
+h1{
+  font-family: 'Lobster', cursive;
+  background-color: #fea82f;
+  padding:10px;
+  text-align: center;
+}
+.box {
+    box-shadow: 0px 0px 18px 5px sandybrown;
+    background-color: #fcecdd;
+    width: 85%;
+    padding: 25px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    display: flexbox;
+    flex-direction: row;
+    };
+
+.date th {
+    text-align: left;
+    background-color: #fea82f;
+    color: white;
+  }
+  .date tr:nth-child(even){background-color: #f2f2f2;}
+
+  .date td:hover {background-color: #ff6701;}
+
+  .date tr{
+    background-color: #ffc288;
+  }
+
+  .date {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .date td, .date th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  p{
+    font-family: 'Dancing Script', cursive;
+    color:#ff6701;
+    flex-wrap: wrap;
+  }
