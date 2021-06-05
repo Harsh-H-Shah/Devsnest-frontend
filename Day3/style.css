@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #344fa1;
+    overflow-wrap:break-word;
+  }
+  
+fieldset {
+    border: 3px solid #344fa1;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+legend {
+    text-align: center;
+    color: #3d84b8;
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px 50px 5px 50px;
+  }
+  
+h1{
+    font-family: 'Mate SC', serif;
+    font-size: 30px;
+  }
+
+
+.left{
+    width: 50%;
+    float: left;
+    padding-right: 25px;
+    box-sizing: border-box;
+  }
+.right{
+    width: 50%;
+    float: right;
+    padding-left: 15px;
+    border-left: 3px solid #344fa1;
+    box-sizing: border-box;
+  }
+ul{
+    padding: 0px;
+    list-style-position: inside;
+  }
+  
+li{
+    font-size: 15px;
+  }
