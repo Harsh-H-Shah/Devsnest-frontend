@@ -13,10 +13,10 @@ body{
     position: absolute;
     left:350px;
     top:50px;
-    background: #353535;
-    background: linear-gradient(145deg,#353535 10%, #a73f3f 50%, #c3c3c3 90%);
-    background: -webkit-linear-gradient(145deg,#353535 10%, #a73f3f 50%, #c3c3c3 90%);
-    background: -moz-linear-gradient(145deg,#353535 10%, #a73f3f 50%, #c3c3c3 90%);
+    background-image: url("./apple-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
     -webkit-box-shadow: inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 0px 0px 15px 5px #FF5736, 0px 0px 15px 5px #FF5736; 
 box-shadow: inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 0px 0px 15px 5px #FF5736, 0px 0px 15px 5px #FF5736;
 }
@@ -36,9 +36,9 @@ box-shadow: inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925,
     position:absolute;
 }
 #second{
-    height: 10px;
+    height: 5px;
     width: 130px;
-    background-color: black;
+    background-color: orangered;
     margin-left:130px;
     border-radius: 30px;
 }
@@ -62,8 +62,8 @@ box-shadow: inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925,
     position:absolute;
 }
 #hour{
-    height: 10px;
-    width: 130px;
+    height: 15px;
+    width: 100px;
     background-color: black;
     margin-left: 130px;
     border-radius: 30px;
