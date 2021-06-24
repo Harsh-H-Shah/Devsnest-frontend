@@ -13,24 +13,26 @@ function makeseats(){
     div.style.border = "1px rgb(51,8,63) solid";
     div.style.margin = "3px";
     div.classList.add("notBooked");
+    div.style.borderRadius = "3px";
     return div;
 }
 for(let i=0;i<36;i+=1){
     box.appendChild(makeseats());
 }
 
-let seats = document.querySelectorAll(".seat");
+const seats = document.querySelectorAll(".seat");
 let remainingSeats = seats.length;
 let bookedSeats = 0;
+console.log(seats);
 
 
     booked.innerText = `Booked seats = ${bookedSeats}`;
     remaining.innerText = `remaining seats = ${remainingSeats}`;
 
-    seats.forEach((seat) => {
+    seats.forEach(seat => {
     seat.addEventListener("click", () => {
-        seat.classList.toggle(".bookingdone");
-        seat.classList.contains(".bookingdone") ? bookSeats() : unBookSeats();
+        seat.classList.toggle("bookingdone");
+        seat.classList.contains("bookingdone") ? bookSeats() : unBookSeats();
     });
     });
 
