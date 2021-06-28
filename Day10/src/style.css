@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(58, 38, 38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame{
+    background-color: rgb(66, 24, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 550px;
+    width: 700px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.card{
+    margin: 5px;
+    width: 100px;
+    height: 90px;
+    cursor: pointer;
+    border: var(--clr-neon) 2px solid;
+    border-radius: 1px;
+}
+
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+
+.card:hover .inner{
+    /* transform: rotateY(180deg); */
+    box-shadow: inset 0 0 5px 0 var(--clr-neon), 0 0 25px 0 var(--clr-neon);
+}
+
+
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.inner1{
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-color: white;
+    color: white;
+    transform: rotateY(180deg);
+}
+.front{
+    background: white url(https://www.devsnest.in/static/media/logo.f1b45387.jpg) no-repeat center center;
+    background-size: 80px;
+    transition: 100ms;
+    box-shadow: inset 0 0 2px 0 var(--clr-neon), 0 0 10px 0 var(--clr-neon);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
