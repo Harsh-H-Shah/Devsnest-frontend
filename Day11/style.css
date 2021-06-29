@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+body{ margin:0;
+    font:normal 75% Arial, Helvetica, sans-serif; 
+}
+
+#particles-js{ position:absolute;
+    width: 100%;
+    height: 100%; 
+    background-color: #141414; 
+    background-image: url("data:image/jpeg;base64,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"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.question-container {
+    height: auto;
+    width: 70%;
+    /* background-color: #212843; */
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.158);
+    font-family: 'Akaya Kanadaka', cursive;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.question {
+    width: auto;
+    color: white;
+}
+
+.option {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-items: center;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    padding: 5%;
+    cursor: pointer;
+    z-index: 1;
+}
+.option-container {
+    display: grid;
+    grid-gap: 30px;
+    justify-content: end;
+    width: 30%;
+    grid-template-columns: 1000fr;
+}
+
+.change{
+    margin:20px;
+    color:darkturquoise;
+
+}
