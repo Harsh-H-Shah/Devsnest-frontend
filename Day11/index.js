@@ -57,7 +57,7 @@ retina_detect: true,
 const options = document.querySelector(".option-container");
 const QUESTIONS = [
 {
-    name: "Who was the first prime minister of India was?",
+    name: "Who was the first prime minister of India?",
     option1: "Indira Gandhi",
     option2: "Manmohan Singh",
     option3: "Jawarlal Nehru",
