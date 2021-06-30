@@ -43,7 +43,7 @@ function fail() {
 setTimeout(() => {
     secondCard2.classList.toggle("inner1");
     firstCard2.classList.toggle("inner1");
-}, 500);
+}, 1000);
 }
 (function shuffle() {  
     document.querySelectorAll(".card").forEach((inner) => {
