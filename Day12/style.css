@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff url("https://i.pinimg.com/originals/a5/fd/da/a5fddaabea95c1000320ae4eaa4cb60c.jpg") no-repeat right top;
+}
+
+.container{
+    color: white;
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+h1{
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+    padding:10px 30px;
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+}
+
+#myInput{
+    background: rgba( 255, 255, 255, 0.70 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-family: 'Yellowtail', cursive;
+    background-image: url("https://img.icons8.com/ios-glyphs/30/000000/multi-edit.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 50%;
+    font-size: 40px;
+    text-decoration: #ffffff;
+    text-align: center;
+    background-position: 20px center;
+    border: none;
+}
+
+.addBtn{
+    background-image: url("https://img.icons8.com/fluent/48/000000/add.png");
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.inputBox{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+.item{
+    width: 600px;
+    padding: 5px 50px;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 50px;
+    font-family: 'Jomhuria', cursive;
+    color: rgba(0, 0, 0, 0.849);
+    background: rgba( 255, 255, 255, 0.70 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+.removeAll{
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.74);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    padding:10px 30px;
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(82, 0, 0);
+    user-select: none;
+}
