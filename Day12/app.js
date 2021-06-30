@@ -1,8 +1,8 @@
 const container = document.querySelector(".tasks");
 const addBtn = document.querySelector(".addBtn");
 const text = document.querySelector("#myInput");
-const removeBtn = document.querySelector(".removeAll");
-
+const removeAllBtn = document.querySelector(".removeAll");
+const removeFirstBtn = document.querySelector(".removeFirst");
 
 addBtn.addEventListener("click", addtask);
 
@@ -18,11 +18,18 @@ function addtask(e){
     }
 }
 
-removeBtn.addEventListener("click", removeAll);
+removeFirstBtn.addEventListener("click", removeFirst);
+
+removeAllBtn.addEventListener("click", removeAll);
 
 function removeAll(e){
   console.log("Hi there");
   for(let i=0;i<10;i++){
     container.removeChild(container.lastChild);
   }
+}
+
+function removeFirst(e){
+  console.log("what's up?");
+  container.removeChild(container.firstChild);
 }
