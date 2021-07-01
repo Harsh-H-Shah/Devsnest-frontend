@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+body{
+    background: url("https://cdn.guidingtech.com/imager/assets/2020/04/787132/Cool-Backgrounds-for-Zoom-Meetings-2_4d470f76dc99e18ad75087b1b8410ea9.jpg?1585326797");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.top{
+    width:fit-content;
+    height: auto;
+    font-size: 30px;
+    padding: 10px 30px;
+    margin-top: 100px;
+    font-family: 'Akaya Kanadaka', cursive;
+    background: rgba(255, 255, 255, 0.74);
+    backdrop-filter: blur( 0.1px );
+    -webkit-backdrop-filter: blur( 0.1px );
+    border-radius: 10px;
+    box-shadow:  -20px 20px 60px #08072e,
+            20px -20px 60px #311d1d;
+    color: rgb(32, 24, 102);
+}
+
+.quote{
+    width:fit-content;
+    height: auto;
+    font-size: 30px;
+    padding: 15px 40px;
+    margin-top: 50px;
+    font-family: 'Akaya Kanadaka', cursive;
+    background: rgba(255, 255, 255, 0.74);
+    backdrop-filter: blur( 0.1px );
+    -webkit-backdrop-filter: blur( 0.1px );
+    border-radius: 10px;
+    box-shadow:  -20px 20px 60px #08072e,
+            20px -20px 60px #311d1d;
+    color: rgb(32, 24, 102);
+}
