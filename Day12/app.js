@@ -3,6 +3,7 @@ const addBtn = document.querySelector(".addBtn");
 const text = document.querySelector("#myInput");
 const removeAllBtn = document.querySelector(".removeAll");
 const removeFirstBtn = document.querySelector(".removeFirst");
+let count = 0;
 
 addBtn.addEventListener("click", addtask);
 
@@ -12,6 +13,7 @@ function addtask(e){
 		const div = document.createElement("div");
 		div.innerHTML = text.value;
 		div.classList.add("item");
+    count++;
     
         container.appendChild(div);
 		text.value = "";
@@ -24,12 +26,17 @@ removeAllBtn.addEventListener("click", removeAll);
 
 function removeAll(e){
   console.log("Hi there");
-  for(let i=0;i<10;i++){
-    container.removeChild(container.lastChild);
+  if(count>0){
+    for(let i=0;i<count;i++){
+      container.removeChild(container.lastChild);
+    }
   }
 }
 
 function removeFirst(e){
   console.log("what's up?");
-  container.removeChild(container.firstChild);
+  if(count>0){
+    container.removeChild(container.firstChild);
+    count--;
+  }
 }
