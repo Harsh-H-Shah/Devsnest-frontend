@@ -4,8 +4,12 @@ const text = document.querySelector("#myInput");
 const removeAllBtn = document.querySelector(".removeAll");
 const removeFirstBtn = document.querySelector(".removeFirst");
 let count = 0;
+let todo = {};
 
 addBtn.addEventListener("click", addtask);
+
+let initial = () => {localStorage.getItem("todo");
+container.innerHTML = initial;}
 
 function addtask(e){
     console.log("Hello");
@@ -15,8 +19,9 @@ function addtask(e){
 		div.classList.add("item");
     count++;
     
-        container.appendChild(div);
+    container.appendChild(div);
 		text.value = "";
+    localStorage.setItem("todos", container.innerHTML);
     }
 }
 
@@ -30,6 +35,7 @@ function removeAll(e){
     for(let i=0;i<count;i++){
       container.removeChild(container.lastChild);
     }
+    localStorage.removeItem("todos")
   }
 }
 
@@ -38,5 +44,6 @@ function removeFirst(e){
   if(count>0){
     container.removeChild(container.firstChild);
     count--;
+    // localStorage.setItem("todos", container.innerHTML);
   }
 }
