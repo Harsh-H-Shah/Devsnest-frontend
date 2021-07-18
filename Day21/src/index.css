@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input{
+  width: 200px;
+  height: auto;
+  padding: 5px;
+  margin: 10px;
+}
+
+.add, .done{
+  background-color: rgb(11, 128, 238);
+  color: aliceblue;
+  width:300px;
+  padding: 5px;
+  border-radius: 5px;
+  border:none;
+  margin:10px;
+}
+
+.delete{
+  background-color: rgb(11, 128, 238);
+  width:150px;
+  padding: 5px;
+  border-radius: 5px;
+  border:none;
+  margin:10px;
+}
+
+.edit{
+  background-color: rgb(235, 43, 43);
+  width:150px;
+  padding: 5px;
+  border-radius: 5px;
+  border:none;
+  margin:10px;
+}
+
+.card{
+  border: 1px lightsteelblue solid;
+  border-radius: 5px;
+  width: 500px;
+  padding: 5px;
+}
