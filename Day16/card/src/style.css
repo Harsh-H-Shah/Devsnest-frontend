@@ -39,17 +39,7 @@
   border: 30px black solid;
   margin: 50px;
 }
-/* 
-.row:nth-child(even){
-  background-color: black;
-  width: 200px;
-  height: 25px;
-}
 
-.row:nth-child(odd){
-  width: 201px;
-  height: 26px;
-} */
 
 .row{
   width: 100%;
