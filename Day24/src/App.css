@@ -1,0 +1,38 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 900;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  background-color: lightblue;
+  height: 50px;
+  font-size: 25px;
+}
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+button{
+  font-size: 15px;
+  padding: 5px 15px;
+  margin: 20px;
+}
+
+p{
+  margin-top: 40px;
+}
+
+h1{
+  margin: 20px;
+}
