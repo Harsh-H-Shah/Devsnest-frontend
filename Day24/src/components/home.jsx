@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { LoginContext } from './loginContext';
 
-function Home({login, setLogin}) {
+function Home() {
+  const { login, setLogin } = useContext(LoginContext);
 
-  console.log(login);
-
-  return <div>
-    <h1>Home</h1>
-    <p>To view profile and dashboard you need to login</p>
-    <button onClick={()=>{
-      login === "login"? setLogin("logout") : setLogin("login");
-    }}>{login}</button>
-  </div>;
+  return (
+    <div>
+      <h1>Home</h1>
+      <p>To view profile and dashboard you need to login</p>
+      <button
+        onClick={() => {
+          login === false ? setLogin(true) : setLogin(false);
+        }}
+      >
+        {login === false ? 'login' : 'logout'}
+      </button>
+    </div>
+  );
 }
 
 export default Home;

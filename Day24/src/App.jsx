@@ -1,19 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import './App.css';
 import Home from './components/home';
 import About from './components/about';
-import Profile from "./components/profile";
-import Dashboard from "./components/dashboard";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import Profile from './components/profile';
+import Dashboard from './components/dashboard';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { LoginContext } from './components/loginContext';
 
 export default function App() {
-
-  const [login, setLogin] = useState("login");
+  const [login, setLogin] = useState(false);
 
   return (
     <Router>
@@ -21,7 +16,7 @@ export default function App() {
         <nav>
           <div>
             <Link to="/">Home</Link>
-          </div>  
+          </div>
           <div>
             <Link to="/about">About</Link>
           </div>
@@ -43,9 +38,11 @@ export default function App() {
           <Route path="/dashboard">
             <Dashboard />
           </Route>
-          <Route path="/">
-            <Home login={login} setLogin={setLogin}/>
-          </Route>
+          <LoginContext.Provider value={{ login, setLogin }}>
+            <Route path="/">
+              <Home />
+            </Route>
+          </LoginContext.Provider>
         </Switch>
       </div>
     </Router>
