@@ -29,17 +29,17 @@ export default function App() {
         </nav>
 
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
           <LoginContext.Provider value={{ login, setLogin }}>
-            <Route path="/">
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/profile">
+              <Profile />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route path="/" exact>
               <Home />
             </Route>
           </LoginContext.Provider>
