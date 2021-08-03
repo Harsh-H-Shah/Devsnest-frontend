@@ -1,7 +1,7 @@
-import { updateWeather } from "../action/action"
+const initialState = "Mumbai";
 
-export const cityReducer = (state="Mumbai", action) => {
-  if(action.type === "UPDATE_CITY"){
+export const cityReducer = (state=initialState, action) => {
+  if(action.type === "UPDATE_CITY_NAME"){
     return action.payload;
   }
   return state;

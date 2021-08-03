@@ -3,5 +3,5 @@ import { dataReducer } from "./dataReducer";
 import { cityReducer } from "./cityReducer";
 
 export const rootReducer = combineReducers({
-  dataReducer, cityReducer
+  data:dataReducer, city:cityReducer
 })
