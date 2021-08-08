@@ -17,7 +17,7 @@ const Weather = () => {
     };
   };
 
-  const url = `http://api.weatherapi.com/v1/current.json?key=1a1202bad9e44bf885e185638213007&`;
+  const url = `http://api.weatherapi.com/v1/current.json?key=069074525fed489b966210527210708&`;
 
   const handleSubmit = async (city) => {
     const response = await fetch(`${url}q=${city}`);
