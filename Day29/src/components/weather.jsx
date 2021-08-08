@@ -3,35 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { updateCityName, updateCityWeather } from '../action/action';
 
 const Weather = () => {
-  //   useEffect(() => {
-  //     handleSubmit();
-  //   }, []);
-
-  // const transformData = (data) => {
-  //   return {
-  //     icon: data.current.condition.icon,
-  //     summary: data.current.condition.text,
-  //     temp: data.current.temp_c,
-  //     wind_speed: data.current.wind_kph,
-  //     precipitation: data.current.precip_mm,
-  //     humidity: data.current.humidity,
-  //     city_name: data.location.name,
-  //   };
-  // };
-
-  // const url = `http://api.weatherapi.com/v1/current.json?key=1a1202bad9e44bf885e185638213007&`;
-
-  // const handleSubmit = async (city) => {
-  //   const response = await fetch(`${url}q=${city}`);
-  //   const data = await response.json();
-
-  //   setInfo(transformData(data));
-  //   console.log(data);
-  // };
-
-  // const [city, setCity] = useState('Mumbai');
-  // const [info, setInfo] = useState({});
-
   const city = useSelector((state) => state.city);
   const info = useSelector((state) => state.data);
 
